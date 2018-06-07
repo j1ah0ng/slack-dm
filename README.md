@@ -14,7 +14,7 @@ To run the script, you'll need a file `users` with the usernames you wish to DM 
 
 2. Run `curl https://slack.com/api/users.list?token=$TOKEN&pretty=1 -o users`, replacing `$TOKEN` with the token from step 1 to write the output of the HTML request to a file `users`.
 
-3. Using **vim** or your preferred regex utility, remove all lines from the file except those containing the `"NAME":` attribute, then truncate the remaining lines such that online the username is kept without any enclosing double quotes. In **vim**, you would run:
+3. Using **vim** or your preferred regex utility, remove all lines from the file except those containing the `"NAME":` attribute, then truncate the remaining lines such that only the username is kept without any enclosing double quotes. In **vim**, you would run:
 	```
 	:%s/^\([^\"]*\"name\"\: \"\)/
 	:%s/",[.]*$/
