@@ -31,4 +31,4 @@ To run the script, you'll need a file `users` with the usernames you wish to DM 
 
 4. On line 19, change the sleep variable as necessary.
 
-5. Run `python3 app.py`. 
+5. Run `python3 slack-dm.py`. 
