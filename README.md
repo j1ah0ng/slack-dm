@@ -28,6 +28,8 @@ To run the script, you'll need a file `users` with the usernames you wish to DM 
 
 2. On line 8, edit the list `msgs` to contain any number of messages to be sent. 
 
+	**NOTE:** All messages must be formatted with percent-encoding, ie. all spaces and non-alphanumeric symbols need to be escaped with a percent code.
+
 3. On line 13, initialise `user` as the sending user's (your) username.
 
 4. On line 19, change the sleep variable as necessary.
