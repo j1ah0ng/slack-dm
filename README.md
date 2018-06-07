@@ -21,7 +21,7 @@ To run the script, you'll need a file `users` with the usernames you wish to DM 
 	```
 	This leaves a file with one username per line. Edit the list as necessary such that it contains only usernames of the people to whom messages will be sent.
 
-### Editing and running `app.py`
+### Editing and running `slack-dm.py`
 
 1. On line 6, intialise `token` as a string containing the legacy token.
 
