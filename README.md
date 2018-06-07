@@ -4,7 +4,7 @@ A Python utility to bulk DM users in a Slack workspace by calling the Slack API 
 
 ## Prerequisites
 
-This script uses **Python 3** due to its calling of the `print()` method.
+This script uses **Python 3** due to its calling of the `print()` method. The script also uses the Python libraries `time` and `requests` to set timeouts and perform HTML GET requests. Run `pip install` as necessary.
 
 To run the script, you'll need a file `users` with the usernames you wish to DM on a separate line, starting at line 1. You can do this by calling the `users.list` method from the Slack API. A simple way to manually generate a `users` file can be done as follows.
 
