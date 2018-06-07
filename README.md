@@ -8,6 +8,8 @@ This script uses **Python 3** due to its calling of the `print()` method.
 
 To run the script, you'll need a file `users` with the usernames you wish to DM on a separate line, starting at line 1. You can do this by calling the `users.list` method from the Slack API. A simple way to manually generate a `users` file can be done as follows.
 
+## Usage
+
 ### Generating a `users` file
 
 1. Visit [https://api.slack.com/custom-integrations/legacy-tokens](https://api.slack.com/custom-integrations/legacy-tokens) to provision a _legacy token_ for the script. Copy and save the token somewhere. 
