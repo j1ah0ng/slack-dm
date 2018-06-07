@@ -15,11 +15,11 @@ To run the script, you'll need a file `users` with the usernames you wish to DM 
 2. Run `curl https://slack.com/api/users.list?token=$TOKEN&pretty=1 -o users`, replacing `$TOKEN` with the token from step 1 to write the output of the HTML request to a file `users`.
 
 3. Using **vim** or your preferred regex utility, remove all lines from the file except those containing the `"NAME":` attribute, then truncate the remaining lines such that online the username is kept without any enclosing double quotes. In **vim**, you would run:
-```
-:%s/^\([^\"]*\"name\"\: \"\)/
-:%s/",[.]*$/
-```
-This leaves a file with one username per line. Edit the list as necessary such that it contains only usernames of the people to whom messages will be sent.
+	```
+	:%s/^\([^\"]*\"name\"\: \"\)/
+	:%s/",[.]*$/
+	```
+	This leaves a file with one username per line. Edit the list as necessary such that it contains only usernames of the people to whom messages will be sent.
 
 ### Editing and running `app.py`
 
