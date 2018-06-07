@@ -20,6 +20,7 @@ To run the script, you'll need a file `users` with the usernames you wish to DM 
 	:%s/",[.]*$/
 	```
 	This leaves a file with one username per line. Edit the list as necessary such that it contains only usernames of the people to whom messages will be sent.
+	Of course, you can do this manually if you're a masochist. Or you can edit `slack-dm.py` so that it does this automatically (if you do, pull request it please!). 
 
 ### Editing and running `slack-dm.py`
 
@@ -32,3 +33,7 @@ To run the script, you'll need a file `users` with the usernames you wish to DM 
 4. On line 19, change the sleep variable as necessary.
 
 5. Run `python3 slack-dm.py`. 
+
+6. ???
+
+7. Profit.
