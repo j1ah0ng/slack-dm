@@ -10,19 +10,12 @@ To run the script, you'll need a file `users` with the usernames you wish to DM 
 
 ## Usage
 
-### Generating a `users` file
+### Generating a `users.txt` file
 
 1. Visit [https://api.slack.com/custom-integrations/legacy-tokens](https://api.slack.com/custom-integrations/legacy-tokens) to provision a _legacy token_ for the script. Copy and save the token somewhere. 
+2. Run `python3 fetch-users.py` to fetch a JSON user directory to the file `users.txt`.
 
-2. Run `curl https://slack.com/api/users.list?token=$TOKEN&pretty=1 -o users`, replacing `$TOKEN` with the token from step 1 to write the output of the HTML request to a file `users`.
-
-3. Using **vim** or your preferred regex utility, remove all lines from the file except those containing the `"NAME":` attribute, then truncate the remaining lines such that only the username is kept without any enclosing double quotes. In **vim**, you would run:
-	```
-	:%s/^\([^\"]*\"name\"\: \"\)/
-	:%s/",[.]*$/
-	```
-	This leaves a file with one username per line. Edit the list as necessary such that it contains only usernames of the people to whom messages will be sent.
-	Of course, you can do this manually if you're a masochist. Or you can edit `slack-dm.py` so that it does this automatically (if you do, pull request it please!). 
+3. Edit the list as necessary such that it contains only usernames of the people to whom messages will be sent.  
 
 ### Editing and running `slack-dm.py`
 
